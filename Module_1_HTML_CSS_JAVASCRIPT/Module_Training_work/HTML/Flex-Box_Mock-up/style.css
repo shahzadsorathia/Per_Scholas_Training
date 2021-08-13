@@ -1,0 +1,63 @@
+.main{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    display: flex;
+}
+       
+.header{
+    border: solid blue 5px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 15vw;
+    font-size: 1vw;
+}
+
+.side_left{
+    border: solid orange 5px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 25vw;
+    font-size: 1vw;
+}
+
+.side_right{
+    border: solid green 5px;
+    display: flex;
+    justify-content:space-around;
+    width: 50%;
+    flex-direction:column;
+    align-items: center;
+    height: 25vw;
+    font-size: 1vw;
+}
+
+.box_one
+{
+    border: solid red 5px;
+    text-align: center;
+    height: 50%;
+    width: 25%;
+    
+}
+
+.box_two
+{
+    border: solid purple 5px;
+    text-align: left;
+    height: 50%;
+    width: 25%;
+}
+
+.box_three
+{
+    border: solid cyan 5px;
+    text-align: center;
+    height: 25%;
+    width: 25%;
+    align-content: center;
+}

@@ -1,0 +1,19 @@
+div{
+    border: solid black 1px;
+}
+
+.bottomDiv{
+    border: solid red 5px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: solid blue 5px;
+
+}
+
+#boxthree{
+    border:solid red 10px;
+    
+}

@@ -1,0 +1,39 @@
+.nav{
+    color: green;
+    text-decoration: none;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    border: solid black 2px;
+    animation: slideIn 3s forwards;
+    width: 100vw;
+}
+.navItem{
+    border: solid black 1px;
+}
+
+@media
+(max-width: 699px) and (min-width: 520px){
+
+    .nav{
+        color: red;
+        display: flex;
+        font-size: 3em;
+
+    }
+}
+
+@keyframes slideIn {
+    100%{transform: strech 3s;}
+}
+
+.one{
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    animation: slideIn 10s forwards;
+    
+}
