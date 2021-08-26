@@ -1,0 +1,22 @@
+#header{
+  border: 1px solid red;
+  color: blue;
+  height: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-container{
+  display: flex;
+  justify-content: space-between;
+}
+.player-board{
+ height: 60px;
+ width: 80px; 
+ background-color: blue;
+}
+.app{
+  background-color: red;
+}
