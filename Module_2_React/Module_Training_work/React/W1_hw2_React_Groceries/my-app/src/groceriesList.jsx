@@ -1,17 +1,15 @@
-
-
 const data1 = [
   {
     item: 'Cereal',
     brand: 'Klog',
-    units: '1oz',
+    units: '16oz',
     quantity: 1,
     isPurchased: false 
     },
 
     {
       item: 'Milk',
-      brand: 'Great Value',
+      brand: 'GV',
       units: '1gl',
       quantity: 1,
       isPurchased: false 
@@ -19,10 +17,10 @@ const data1 = [
 
       {
         item: 'Orange Juice',
-        brand: 'Great Value',
+        brand: 'GV',
         units: '1gl',
         quantity: 1,
         isPurchased: false 
-        }
-]
+        },       
+];
     export default data1 ;
