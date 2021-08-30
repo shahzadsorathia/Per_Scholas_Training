@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
+import DivThree from './DivThree';
+import App from 'react';
+
 
 export default class DivTwo extends Component {
+
     render() {
         return (
-            <div>
-                <h3> {this.props.tardis.name} </h3>
+
+            <div >
+                <DivThree DivThree={this.props.DivTwo} />
+                <DivThree DivThree={this.props.DivTwo} />
             </div>
+
         );
     }
 }

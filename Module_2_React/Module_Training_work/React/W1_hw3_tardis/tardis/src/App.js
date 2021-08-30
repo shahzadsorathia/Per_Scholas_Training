@@ -1,9 +1,12 @@
+
+import { Component } from 'react';
 import './App.css';
 import DivOne from './DivOne';
 
 
 
-class App {
+class App extends Component{
+
   state = {
     tardis: {
       name: 'Time and Relative Dimension in Space',
@@ -15,14 +18,14 @@ class App {
     if (this.state.tardis.caps) {
       this.setState({
         tardis: {
-          name: text.toLowerCase(),
+          name: this.state.tardis.name.toLowerCase(),
           caps: false
         }
       })
     } else {
       this.setState({
         tardis: {
-          name: text.toUpperCase(),
+          name: this.state.tardis.name.toUpperCase(),
           caps: true
         }
       })
@@ -31,11 +34,10 @@ class App {
 
   render() {
     return (
-      <div>
-        <div>
-          <DivOne tardis={this.state.tardis} />
+          <div onClick={this.changeIt}>
+          <DivOne DivOne={this.state.tardis}  />
         </div>
-      </div>
+     
     );
   }
 }
