@@ -4,8 +4,8 @@ export default class DivTwo extends Component {
     render() {
         return (
             <div>
-                Two
+                <h3> {this.props.tardis.name} </h3>
             </div>
-        )
+        );
     }
 }

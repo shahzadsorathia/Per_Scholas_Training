@@ -1,20 +1,17 @@
-import react, {Component} from 'react';
 import './App.css';
 import DivOne from './DivOne';
-import DivTwo from './DivTwo';
-import DivThree from './DivThree';
 
 
-class App extends Component{
 
+class App {
   state = {
-  tardis: {
-    name: 'Time and Relative Dimension in Space',
-    caps: false,
-  },
+    tardis: {
+      name: 'Time and Relative Dimension in Space',
+      caps: false,
+    },
 
-}
-  changeIt = (text) =>{
+  }
+  changeIt = (text) => {
     if (this.state.tardis.caps) {
       this.setState({
         tardis: {
@@ -32,16 +29,15 @@ class App extends Component{
     }
   }
 
-render(){
-return (
-    <div className="App">
-    
-     <DivOne tardis={this.state.tardis}/>
-    
-    
-    </div>
-  );
-}
+  render() {
+    return (
+      <div>
+        <div>
+          <DivOne tardis={this.state.tardis} />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
