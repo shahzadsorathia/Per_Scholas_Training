@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css'
+import MovieInfo from './MovieInfo';
 
 /*
 =========================================
@@ -218,7 +219,7 @@ class App extends Component {
   //     .then(Response => Response.json())
   //     //after we use json() we can THEN usa .then() to do the next task
   //     .then(data => console.log(data))
-  
+
 
   // THIRD PARTY API - Google Twitter ... companies provides APIS which allows us access to their data.
   //A lot of FREE APIs and some require API key
@@ -258,32 +259,43 @@ class App extends Component {
     })
   }
 
-  handleSubmit = (event) =>{
+  handleSubmit = (event) => {
     // default behavior - web pages refreshes when we do a submit
     // must do in form when handling submit
 
     event.preventDefault()
     console.log("We are inside handleSubmit.")
     console.log(
-        this.state.baseUrl 
-      + this.state.apiKey 
-      + this.state.query 
+      this.state.baseUrl
+      + this.state.apiKey
+      + this.state.query
       + this.state.movieTitle
     )
-//this.setState CAN actually take in TWO arguments
-// frist argument is an object with us updating our state
+    //this.setState CAN actually take in TWO arguments
+    // frist argument is an object with us updating our state
     this.setState({
-      searchURL: 
-        this.state.baseUrl 
-      + this.state.apiKey 
-      + this.state.query 
-      + this.state.movieTitle
-    })
+      searchURL:
+        this.state.baseUrl
+        + this.state.apiKey
+        + this.state.query
+        + this.state.movieTitle
+      }, () => {
+        fetch(this.state.searchURL) // Returns a Promise
+          .then(Response => Response.json())
+          .then(Movie => {
+            this.setState({
+              movieData: Movie
+            })
+          })
+              .catch(error => console.log(error));
+
+          })
+    
   }
 
   render() {
     return (
-      <div >
+      <div>
         <div id="header" >APIs and Everything in Between</div>
         {/* <button onClick={this.GetData}> Fetch </button> */}
         <form onSubmit={this.handleSubmit}>
@@ -295,8 +307,9 @@ class App extends Component {
           />
           <button type="submit">Submit</button>
         </form>
+        <MovieInfo Movie={this.state.movieData} />
       </div>
-    );
+        );
   }
 }
 export default App;
