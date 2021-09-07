@@ -4,7 +4,7 @@ class Footer extends Component {
     render() {
         return (
             <div id="footer">
-            CopyRight  &#169;
+            <h1> Per-Scholas </h1>
         </div>
         );
     }

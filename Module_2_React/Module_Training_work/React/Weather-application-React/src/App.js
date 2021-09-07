@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './components/header';
-import Footer from './components/footer';
-import Main from './components/Main';
-import React, { Component }  from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Body from './Body';
+import React from 'react';
 
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App" >
       <Header/>
-      <Main />
-      <Footer year={new Date().getFullYear()} />
+      <Body />
+      <Footer/>
 
     </div>
 

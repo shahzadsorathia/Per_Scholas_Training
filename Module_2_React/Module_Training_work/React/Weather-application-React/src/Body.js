@@ -47,11 +47,11 @@ function Body() {
         </div>
         {(typeof weather.main != "undefined") ? (
         <div>
-          <div className="location-box">
+          <div className="locationbox">
             <div className="location">{weather.name}, {weather.sys.country}</div>
             <div className="date">{dateBuilder(new Date())}</div>
           </div>
-          <div className="weather-box">
+          <div className="weatherbox">
             <div className="temp">
               {Math.round(weather.main.temp)}°c
             </div>
