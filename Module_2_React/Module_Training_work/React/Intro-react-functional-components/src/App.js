@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-//ES - function expression
+//ES6 - function expression
 
 const App = () => {
   // List of changes
@@ -40,12 +40,13 @@ const App = () => {
         "this" point to the parent object. We are no longer working with an object 
         component we are now using a function component */}
 
-
         {count}
       </div>
       {/* we no longer need to use this.setState, useState method let's 
       us nvoke the function we created in our state */}
-      <button onClick {() => setCount()}> Add</button>
+
+      <button onClick={() => setCount(count + 1)}> Add</button>
+      <button onClick={() => setCount(count - 1)}> Subtract</button>
     </div>
   );
 }
