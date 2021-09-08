@@ -20,5 +20,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-api.giphy.com/v1/gifs/random/
