@@ -1,12 +1,13 @@
 
 import './App.css';
+import FloorPlan from './components/FloorPlan';
 
 const App= () => {
   return (
-    <div className="App">
+
       <FloorPlan />
-      
-    </div>
+    
+   
   );
 }
 

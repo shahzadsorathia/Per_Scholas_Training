@@ -1,12 +1,11 @@
 import React from 'react'
 
-const FloorPlan = () => {
+const Sink = () => {
     return (
         <div>
-            
-            
+            Sink
         </div>
     )
 }
 
-export default FloorPlan
+export default Sink
