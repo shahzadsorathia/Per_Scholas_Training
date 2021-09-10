@@ -1,18 +1,13 @@
-import React from 'react';
-import Score from './Score';
-
-const Student = (props) => {
+import Score from "./Score"
+const Student =(props) => {
+    const scoreList = props.scholars.scores.map((score)=> <Score points={score}/>)
     return (
-        <div >
-            <p> {props.student.name} </p>
-            <p >{props.student.bio}</p>
-            {
-                props.student.scores.map((item, index) => (
-                    <Score key={index} score={item.score} date={item.date}/>
-                ))
-            }
+        <div>
+            <div>name: {props.scholars.name} </div>
+           <div>bio: {props.scholars.bio}</div>
+           {scoreList} 
         </div>
-    );
-};
+    )
+}
 
-export default Student;
+export default Student

@@ -69,18 +69,12 @@ const App = () => {
     ]
   });
 
+  const studentsList = studentData.students.map((student) => <Student scholars={student} />)
   return (
-    <div>
-     <p> Students</p>
-      <div >
-        {
-          studentData.students.map((student) => (
-            <student student={student} />
-          ))
-        }
-      </div>
-    </div>
-  );
-};
+    <div className="App">
+      {studentsList}
 
-export default App;
+    </div>
+  )
+}
+export default App
