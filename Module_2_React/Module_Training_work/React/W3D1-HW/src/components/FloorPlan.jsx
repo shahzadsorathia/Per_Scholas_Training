@@ -9,12 +9,12 @@ const FloorPlan = () => {
     return (
         <div>
             <BedRoom bedNum={"1"} />
-            <Kitchen  />
-            <Bath  size={"Full"}/>
-            <BedRoom bedNum={"2"}/>
+            <Kitchen />
+            <Bath size={"Full"} />
+            <BedRoom bedNum={"2"} />
             <LivingRoom />
             <Bath size={"Half"} />
-            <BedRoom bedNum={3} />
+            <BedRoom bedNum={"3"} />
         </div>
     )
 }
