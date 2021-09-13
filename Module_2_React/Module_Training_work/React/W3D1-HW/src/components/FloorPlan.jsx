@@ -14,7 +14,7 @@ const FloorPlan = () => {
             <BedRoom bedNum={"2"}/>
             <LivingRoom />
             <Bath size={"Half"} />
-            <BedRoom bedNum={3} />
+            <BedRoom bedNum={"3"} />
         </div>
     )
 }
