@@ -1,8 +1,10 @@
 package store_number;
 
-   public static void main(String args[]) {
+public class store_number{
+	
+public static void main(String args[]) {
    	
-int num =22;
+int num =11;
 
 
 System.out.print("  ");
